@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: LocalStackApplication
+---
+spring:
+  config:
+    activate:
+      on-profile: localstack
+
+aws:
+  parameterstore:
+    enabled: true
+    endpoint: http://localhost:4566
