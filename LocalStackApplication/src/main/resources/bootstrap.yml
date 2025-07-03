@@ -8,6 +8,13 @@ spring:
       on-profile: localstack
 
 aws:
+  region: sa-east-1
   parameterstore:
     enabled: true
     endpoint: http://localhost:4566
+
+
+cloud:
+  aws:
+    region:
+      static: sa-east-1
